@@ -2,33 +2,101 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>เรื่องของเรา</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เรื่องที่อยากบอก</title>
+
 <style>
 body {
-    text-align:center;
-    font-family:Arial;
-    background:#fff0f3;
-    padding:80px 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #ffffff;
 }
+
+.container {
+    max-width: 500px;
+    padding: 40px 25px;
+    text-align: left;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* เอฟเฟกต์โผล่ทีละบรรทัด */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appear 1s ease forwards;
+}
+
+.fade:nth-of-type(1) { animation-delay: 4.5s; }
+.fade:nth-of-type(2) { animation-delay: 8.5s; }
+.fade:nth-of-type(3) { animation-delay: 12.5s; }
+.fade:nth-of-type(4) { animation-delay: 17.5s; }
+.fade:nth-of-type(5) { animation-delay: 21.5s; }
+.fade:nth-of-type(6) { animation-delay: 25.5s; }
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button-area {
+    margin-top: 50px;
+    text-align: center;
+}
+
 button {
-    padding:12px 25px;
-    background:#ff4d6d;
-    color:white;
-    border:none;
-    border-radius:8px;
+    width: 200px;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    background: #111;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.97);
 }
 </style>
 </head>
+
 <body>
 
-<h2>เรื่องของเรา 🤍</h2>
+<div class="container">
+    <h2>เค้ามีบางอย่างที่อยากบอกแฟน</h2>
 
-<p>จำวันที่เราเจอกันครั้งแรกได้ไหม...</p>
-<p>วันนั้นเราไม่คิดเลยว่าจะรักเธอได้ขนาดนี้</p>
+<p class="fade">ตั้งแต่วันที่เค้าได้รู้จักแฟน</p>
+<p class="fade">หลายสิ่งอย่างในชีวิตเค้าก็เปลี่ยนไป</p>
+<p class="fade">มันมีใครบางคนที่ทำให้วันธรรมดา ๆ มีความหมายมากขึ้น</p>
+<p class="fade">และคนนั้นก็คือแฟน</p>
 
-<a href="promise.html">
-    <button>อ่านต่ออีกนิด</button>
-</a>
+<p class="fade">ขอบคุณที่อยู่ข้างกันในทุกช่วงเวลา</p>
+<p class="fade">ไม่ว่าจะเป็นวันที่ดี หรือวันที่เค้างอแงใส่แฟน</p>
+
+    <div class="button-area fade" style="animation-delay:30s;">
+        <a href="promise.html">
+            <button>จบแล้ว</button>
+        </a>
+    </div>
+</div>
 
 </body>
 </html>

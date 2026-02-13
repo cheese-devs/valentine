@@ -2,21 +2,56 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>คำสัญญา</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สำหรับเธอ</title>
+
 <style>
 body {
-    text-align:center;
-    font-family:Arial;
-    background:#ffe5ec;
-    padding:120px 20px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
 </style>
 </head>
+
 <body>
 
-<h1>เราจะอยู่ข้างเธอเสมอ 💖</h1>
-<p>ไม่ว่าจะวันดีหรือวันเหนื่อย</p>
-<p>ขอบคุณที่เข้ามาในชีวิตกันนะ 🤍</p>
+<div class="container">
+    <h1>รักแฟนที่สุดเลย 💜</h1>
+
+    <img src="us.jpg" alt="our photo">
+</div>
 
 </body>
 </html>
