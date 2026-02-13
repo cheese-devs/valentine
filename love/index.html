@@ -2,34 +2,61 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For You 💌</title>
+
 <style>
 body {
-    text-align:center;
-    font-family:Arial;
-    background:linear-gradient(#ffd6e0,#fff);
-    padding-top:150px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffd6e0, #fff);
+    text-align: center;
+    padding: 20px;
 }
+
+h1 {
+    font-size: 28px;
+    color: #c9184a;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
 button {
-    padding:15px 30px;
-    background:#ff4d6d;
-    color:white;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
+    width: 80%;
+    max-width: 300px;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background: #ff4d6d;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
-button:hover {
-    background:#c9184a;
+
+button:active {
+    transform: scale(0.95);
 }
 </style>
 </head>
+
 <body>
 
-<h1>เว็บนี้ทำมาเพื่อเธอ 💖</h1>
-<p>พร้อมจะดูไหม?</p>
+<h1>มีบางอย่างอยากบอกเธอ 💖</h1>
+<p>กดปุ่มข้างล่างนี้นะ</p>
 
 <a href="story.html">
-    <button>กดดูต่อ</button>
+    <button>กดตรงนี้ 💌</button>
 </a>
 
 </body>
