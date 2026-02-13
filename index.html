@@ -1,100 +1,36 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Someone Special 💖</title>
-
-    <style>
-        /* ===== ตั้งค่าพื้นฐาน ===== */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #ffd6e0, #ffffff);
-            text-align: center;
-        }
-
-        section {
-            padding: 80px 20px;
-        }
-
-        h1, h2 {
-            color: #c9184a;
-        }
-
-        p {
-            font-size: 18px;
-            color: #444;
-            max-width: 600px;
-            margin: 10px auto;
-        }
-
-        button {
-            background: #ff4d6d;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #c9184a;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        img {
-            width: 300px;
-            border-radius: 15px;
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>For You 💌</title>
+<style>
+body {
+    text-align:center;
+    font-family:Arial;
+    background:linear-gradient(#ffd6e0,#fff);
+    padding-top:150px;
+}
+button {
+    padding:15px 30px;
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+button:hover {
+    background:#c9184a;
+}
+</style>
 </head>
-
 <body>
 
-    <!-- ===== ส่วนที่ 1 : หน้าเปิด ===== -->
-    <section>
-        <h1>เว็บนี้ทำมาเพื่อเธอ 💌</h1>
-        <p>ถ้าเธอกดเข้ามา แปลว่าเธอสำคัญมากนะ</p>
-        <button onclick="showStory()">ดูเรื่องราวของเรา</button>
-    </section>
+<h1>เว็บนี้ทำมาเพื่อเธอ 💖</h1>
+<p>พร้อมจะดูไหม?</p>
 
-    <!-- ===== ส่วนที่ 2 : เรื่องราว ===== -->
-    <section id="story" class="hidden">
-        <h2>เรื่องของเรา</h2>
-        <p>วันที่เราเจอกันครั้งแรก...</p>
-        <p>วันที่เราเริ่มสนิทกัน...</p>
-        <p>วันที่เรารู้ว่าเธอสำคัญมากแค่ไหน...</p>
-
-        <!-- ใส่รูปได้ตรงนี้ -->
-        <!-- <img src="ourphoto.jpg"> -->
-
-        <button onclick="showPromise()">อ่านต่ออีกนิด</button>
-    </section>
-
-    <!-- ===== ส่วนที่ 3 : คำสัญญา ===== -->
-    <section id="promise" class="hidden">
-        <h2>คำสัญญา 🤍</h2>
-        <p>ไม่ว่าวันข้างหน้าจะเป็นยังไง</p>
-        <p>เราจะยังอยู่ข้างเธอเสมอ</p>
-        <h2>รักเธอมากที่สุด 💖</h2>
-    </section>
-
-    <!-- ===== JavaScript ===== -->
-    <script>
-        function showStory() {
-            document.getElementById("story").classList.remove("hidden");
-        }
-
-        function showPromise() {
-            document.getElementById("promise").classList.remove("hidden");
-        }
-    </script>
+<a href="story.html">
+    <button>กดดูต่อ</button>
+</a>
 
 </body>
 </html>
