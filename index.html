@@ -42,7 +42,17 @@ h1::after {
 p {
     font-size: 14px;
     color: #666;
-    margin: 25px 0 45px;
+    margin: 25px 0 25px;
+}
+
+input {
+    width: 220px;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -56,7 +66,6 @@ button {
     cursor: pointer;
     transition: 0.2s;
 }
-
 
 button:active {
     transform: scale(0.97);
@@ -72,13 +81,27 @@ button:active {
 <body>
 
 <div class="container">
-    <h1>เค้ามีบ้างอย่างอยากให้แฟน</h1>
-    <p>ตั้งใจทำเพื่อแฟนที่น่ารักของเค้าโดยเฉพาะ</p>
+    <h1>เค้ามีบางอย่างอยากให้แฟน</h1>
+    <p>ตั้งใจทำเพื่อแฟนที่น่ารักโดยเฉพาะ 💜</p>
 
-    <a href="story.html">
-        <button>อ่านต่อ</button>
-    </a>
+    <input type="text" id="anniversary" placeholder="เช่น 14/02/2569">
+
+    <br>
+
+    <button onclick="checkDate()">วันสำคัญของเรา</button>
 </div>
+
+<script>
+function checkDate() {
+    const input = document.getElementById("anniversary").value.trim();
+
+    if (input === "12/12/2568") {
+        window.location.href = "story.html";
+    } else {
+        alert("จำวันที่สำคัญของเราให้ถูกก่อนนะ 🤍");
+    }
+}
+</script>
 
 </body>
 </html>
